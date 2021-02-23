@@ -76,15 +76,7 @@ if (widthpage <= 1560) {
 var widthpage = $(window).width();
 if (widthpage <= 570) {
   $('.section_header').removeClass('section_header_fixed');
-
-  /*$(window).scroll(function() {
-    if ($(this).scrollTop() > 20) {
-      
-
-    } else {
-      $('.section_header').removeClass('section_header_fixed');
-    }
-  });*/
+  $('.hotline').addClass('circle')
 
 }
 
