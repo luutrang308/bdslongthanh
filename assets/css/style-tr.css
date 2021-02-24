@@ -289,7 +289,8 @@
 }
 .element_tongquanduan .item span {
   color: #000;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Regular";
+  font-weight: 600;
   font-size: 16px;
   display: block;
   position: relative;
@@ -635,7 +636,7 @@
   margin-bottom: 25px;
 }
 .element_about .item:nth-child(4) p {
-  font-family: UTMAvo;
+  font-family: UTMAvoBold;
   font-size: 16px;
   position: relative;
 }
@@ -730,7 +731,7 @@
 .element_tienich .item:nth-child(1) .item_categories p a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 .element_tienich .item:nth-child(1) .item_categories:last-child {
   width: 38%;
@@ -877,16 +878,16 @@
   opacity: 0;
 }
 .section_form .row .element_contact .item form .btn_contact {
-  width: 100%;
-  margin-top: 20px;
+  width: 15%;
+  margin: 20px auto;
   background: #cc8c67;
   border: none;
   border-radius: 10px;
-  padding: 10px 0;
+  padding: 10px 0 8px 0;
   text-transform: uppercase;
   color: #fff;
   font-family: "Montserrat-Bold";
-  font-size: 20px;
+  font-size: 16px;
 }
 .section_form .row .element_contact .item form .btn_contact:focus {
   outline: 0;
@@ -1084,6 +1085,14 @@
   width: 100%;
 }
 
+.dangkinhantin_mobi {
+  display: none;
+}
+
+.dangkinhantin_mobi.circle, .dangkinhantin_mobi.circle:after {
+  background: transparent;
+}
+
 .section_fixed_menu.change_color .dangki_nhantin {
   transform: rotateZ(-90deg);
   background: #FF9F2C;
@@ -1225,6 +1234,7 @@
 .element_tintuc .modal-dialog .modal-content {
   width: 100%;
   height: 100%;
+  border-radius: 0;
 }
 .element_tintuc .modal-dialog .modal-content .modal-body {
   width: 100%;
@@ -1233,6 +1243,21 @@
 .element_tintuc .modal-dialog .modal-content .modal-body #myGallery {
   width: 100%;
   height: 100%;
+}
+.element_tintuc .modal-dialog .modal-content .modal-body #myGallery .item {
+  padding: 20px 60px;
+}
+.element_tintuc .modal-dialog .modal-content .modal-body #myGallery .item .img {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.element_tintuc .modal-dialog .modal-content .modal-body #myGallery .item .img img {
+  max-width: 100%;
+}
+.element_tintuc .modal-dialog .modal-content .modal-body #myGallery .item .text_pro p {
+  font-family: Montserrat-Regular;
+  font-size: 16px;
+  text-align: justify;
 }
 .element_tintuc .modal-dialog .modal-content .modal-body #myGallery .carousel-control {
   width: 25px;

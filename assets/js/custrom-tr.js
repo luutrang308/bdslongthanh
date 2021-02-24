@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     }
 
-    if ($(this).scrollTop() > 800) {
+    if ($(this).scrollTop() > 400) {
       $('.section_fixed_menu').addClass('change_color');
     } else {
       $('.section_fixed_menu').removeClass('change_color');
@@ -93,7 +93,8 @@ if (widthpage <= 1560) {
 var widthpage = $(window).width();
 if (widthpage <= 570) {
   $('.section_header').removeClass('section_header_fixed');
-  $('.hotline').addClass('circle')
+  $('.hotline').addClass('circle');
+  $('.dangkinhantin_mobi').addClass('circle');
 
 }
 

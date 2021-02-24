@@ -302,7 +302,13 @@
     margin-top: 20px;
   }
   .grid_img_hover {
-    display: inherit;
+    display: inherit !important;
+  }
+  .element_tintuc .modal-dialog .modal-content .modal-body #myGallery .item {
+    padding: 0;
+  }
+  .modal-open .modal .container {
+    padding-left: 0;
   }
   .grid_img_hover .grid_box .item_categories {
     margin: 5px 0;
@@ -316,15 +322,44 @@
   .section_fixed_menu .hotline a , .section_fixed_menu .toggle_menu img {
     width: 30px;
   }
-  .dangki_nhantin {
+  .dangki_nhantin .dangkinhantin_mobi {
+    display: block !important;
+    width: 50px;
+  }
+  .dangki_nhantin .dangkinhantin_mobi img {
+    width: 100%;
+  }
+  .dangki_nhantin a {
     display: none;
   }
+  .section_fixed_menu.change_color .dangki_nhantin {
+    transform: inherit;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
   .section_fixed_menu {
-    right: -10px;
-    top: 70%;
+    right: 0;
+    top: 85%;
   }
   .top-up {
-    right: 5px;
+    right: 35px;
+    bottom: 14px;
+  }
+  .section_fixed_menu .dangki_nhantin {
+    transform: inherit;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+  .section_fixed_menu .hotline .change {
+    display: none !important;
+  }
+  .section_fixed_menu .hotline a {
+    display: block !important;
+    width: 50px;
   }
 
 
@@ -428,6 +463,12 @@
   }
   .top_header_page {
     padding: 10px 0;
+  }
+  .section_form .row .element_contact {
+    margin-top: 10px;
+  }
+  .section_form .row .element_contact .item form .btn_contact {
+    width: 35%;
   }
 
 }
