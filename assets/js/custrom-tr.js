@@ -29,8 +29,9 @@ $(document).ready(function() {
 
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 20) {
+    if ($(this).scrollTop() > 0) {
       $('.section_header').removeClass('section_header_fixed');
+      /*$('.section_header').css('display','none');*/
 
     } else {
       $('.section_header').addClass('section_header_fixed');

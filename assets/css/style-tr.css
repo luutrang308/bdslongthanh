@@ -20,6 +20,7 @@
   position: absolute;
   top: -19px;
   left: 0;
+  z-index: 1;
 }
 .top_header ul.top_menu {
   display: flex;
@@ -209,7 +210,7 @@
   text-align: center;
 }
 .title_basic span {
-  font-size: 20px;
+  font-size: 16px;
   font-family: Montserrat-Regular;
   color: #071C3B;
 }
@@ -250,7 +251,7 @@
 .element_tongquanduan .item p {
   color: #cc8c67;
   font-family: "Montserrat-Bold";
-  font-size: 18px;
+  font-size: 16px;
   width: 50%;
   text-align: right;
   padding-right: 50px;
@@ -275,7 +276,7 @@
 .element_tongquanduan .item span {
   color: #000;
   font-family: "Montserrat-Bold";
-  font-size: 18px;
+  font-size: 16px;
   display: block;
   position: relative;
 }
@@ -338,7 +339,7 @@
 }
 .title_vitriduan span {
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   font-family: Montserrat-Regular;
 }
 
@@ -549,8 +550,8 @@
   font-size: 35px;
 }
 .element_about .item p {
-  font-family: UTMAvo;
-  font-size: 20px;
+  font-family: Montserrat-Regular;
+  font-size: 16px;
   position: relative;
 }
 .element_about .item p:before {
@@ -594,13 +595,13 @@
 }
 .element_about .item:nth-child(4) h4 {
   font-family: UTMAvo;
-  font-size: 22px;
+  font-size: 18px;
   position: relative;
   margin-bottom: 25px;
 }
 .element_about .item:nth-child(4) p {
   font-family: UTMAvo;
-  font-size: 20px;
+  font-size: 16px;
   position: relative;
 }
 .element_about .item:nth-child(4) p:before {
@@ -615,7 +616,7 @@
 }
 .element_about .item:nth-child(4) span {
   font-family: UTMAvo;
-  font-size: 20px;
+  font-size: 16px;
   position: relative;
   margin-bottom: 15px;
   display: block;
@@ -654,9 +655,9 @@
   left: 0;
   bottom: -8px;
 }
-.element_tienich .item p {
-  font-family: UTMAvo;
-  font-size: 20px;
+.element_tienich .item > p {
+  font-family: Montserrat-Regular;
+  font-size: 16px;
   position: relative;
   color: #071C3B;
   text-align: justify;
@@ -735,10 +736,11 @@
 .element_tienich .item .item_categories p a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: Montserrat-Regular;
 }
 .element_tienich .item:nth-child(2) .item_categories .img {
-  height: 560px;
+  height: 500px;
 }
 .element_tienich .item:nth-child(3) .item_categories .img {
   height: 575px;
