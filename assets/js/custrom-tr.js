@@ -4,9 +4,17 @@ $(document).ready(function() {
   $('.section_slider').slick({
     dots: true,
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed: 1000,
     arrows: false,
     lazyLoad: 'ondemand',
+  });
+
+  $('.slider_news').slick({
+    dots: false,
+    slidesToShow: 1,
+    autoplay: false,
+    arrows: false,
   });
 
   $('.element_donviphanphoi').slick({
@@ -24,17 +32,25 @@ $(document).ready(function() {
     ]
   });
   $('.toggle_menu').click(function() {
-    $('.section_header').toggleClass('section_header_fixed');
+    $('.section_header').toggleClass('section_header_fixed fixed_color');
+    /*$('.section_header').toggleClass('fixed_color');*/
   });
 
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 0) {
       $('.section_header').removeClass('section_header_fixed');
-      /*$('.section_header').css('display','none');*/
+      $('.section_header').removeClass('fixed_color');
 
     } else {
       $('.section_header').addClass('section_header_fixed');
+
+    }
+
+    if ($(this).scrollTop() > 800) {
+      $('.section_fixed_menu').addClass('change_color');
+    } else {
+      $('.section_fixed_menu').removeClass('change_color');
     }
   });
 
