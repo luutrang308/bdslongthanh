@@ -115,6 +115,10 @@
   .top_header .logo_page img {
     width: 100%;
   }
+  .section_map .item_center span {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 
@@ -170,6 +174,19 @@
   }
   .img_tongquanduan .box_img {
     height: 170px;
+  }
+  .section_map .item_center span {
+    width: 15px;
+    height: 15px;
+  }
+  .main_menu li a {
+    font-size: 14px;
+  }
+  .main_menu li {
+    padding: 0 10px;
+  }
+  .top_header ul.top_menu li {
+    margin: 8px 0;
   }
 }
 
@@ -361,7 +378,10 @@
     display: block !important;
     width: 50px;
   }
-
+  .section_map .item_center span {
+    width: 10px;
+    height: 10px;
+  }
 
   /* header */
   .main_menu li , .top_header ul.top_menu li {

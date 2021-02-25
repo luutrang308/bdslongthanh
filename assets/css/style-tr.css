@@ -338,6 +338,20 @@
 .section_map {
   width: 100%;
   overflow: hidden;
+  position: relative;
+}
+.section_map .item_center {
+  position: absolute;
+  right: 25%;
+  top: 49%;
+  transform: translate(-50%, -50%);
+}
+.section_map .item_center span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background: #cc8c67;
 }
 .section_map img {
   width: 100%;
@@ -1214,6 +1228,58 @@
     opacity: 0;
   }
 }
+.circle_map {
+  border-radius: 50%;
+  background-color: #EC8C1D;
+  transition: height 0.25s ease, width 0.25s ease;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+.circle_map:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0;
+  left: 0px;
+  border-radius: 50%;
+  border: 1px solid #ec8c1d85;
+  background: #ec8c1d30;
+}
+.circle_map:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 1px solid #d28c59db;
+  background: #d28c59db;
+  z-index: -1;
+}
+.circle_map:before {
+  animation: ripplemap 2.5s linear infinite;
+}
+.circle_map:after {
+  animation: ripplemap 2s linear 1s infinite;
+}
+
+@keyframes ripplemap {
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(2.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
 .top-up {
   position: fixed;
   bottom: 100px;
@@ -1247,6 +1313,12 @@
 .element_tintuc .modal-dialog .modal-content .modal-body #myGallery .item {
   padding: 20px 60px;
 }
+.element_tintuc .modal-dialog .modal-content .modal-body #myGallery .item h2 {
+  font-family: Montserrat-Bold;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 30px;
+}
 .element_tintuc .modal-dialog .modal-content .modal-body #myGallery .item .img {
   text-align: center;
   margin-bottom: 20px;
@@ -1264,4 +1336,10 @@
 }
 .element_tintuc .modal-dialog .modal-content .modal-body #myGallery .carousel-control.left, .element_tintuc .modal-dialog .modal-content .modal-body #myGallery .carousel-control.right {
   background-image: none;
+}
+
+#myGallery .glyphicon-chevron-right:before, #myGallery .glyphicon-chevron-left:before {
+  background: grey;
+  padding: 5px;
+  border-radius: 2px;
 }
