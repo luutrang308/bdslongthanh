@@ -188,6 +188,10 @@
   .top_header ul.top_menu li {
     margin: 8px 0;
   }
+  .img_bando .item_center_bando span {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /* 570 */
@@ -489,6 +493,10 @@
   }
   .section_form .row .element_contact .item form .btn_contact {
     width: 35%;
+  }
+  .img_bando .item_center_bando span {
+    width: 10px;
+    height: 10px;
   }
 
 }
