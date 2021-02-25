@@ -498,5 +498,8 @@
     width: 10px;
     height: 10px;
   }
+  .main_menu li:before {
+    display: none;
+  }
 
 }
