@@ -543,6 +543,20 @@
 .img_bando {
 	width: 100%;
 	overflow: hidden;
+	position: relative;
+	.item_center_bando {
+		position: absolute;
+        left: 35.3%;
+	    top: 54.5%;
+	        transform: translate(-50% , -50%);
+		span {
+			display: block;
+			width: 30px;
+			height: 30px;
+			border-radius: 100px;
+			background: #cc8c67;
+		}
+	}
 	img {
 		width: 100%;
 	}
