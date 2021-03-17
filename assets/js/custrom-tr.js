@@ -1,14 +1,38 @@
 $(document).ready(function() {
 	new WOW().init();
 
-  $('.section_slider').slick({
-    dots: true,
+  $('.slider_banner').slick({
+    dots: false,
     slidesToShow: 1,
     autoplay: true,
     autoplaySpeed: 1000,
     arrows: false,
     lazyLoad: 'ondemand',
   });
+  $('.slider_client').slick({
+    dots: false,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false,
+    lazyLoad: 'ondemand',
+  });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+      $('.section_header').addClass('section_header_bg');
+
+    } else {
+      $('.section_header').removeClass('section_header_bg');
+    }
+  });
+
+
+
+
+
+
+
 
   $('.slider_news').slick({
     dots: false,
